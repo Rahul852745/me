@@ -8,4 +8,4 @@ This is the implementaion code for the blog I have written <!-- '[How to create 
   - run `npm install` to instal node modules
   - run `npm start` to start the service on `localhost:3000`
     
-##### deployed app : http://Rahul852745.github.io/me/
+##### deployed app : https://Rahul852745.github.io/me/
