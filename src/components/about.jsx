@@ -1,8 +1,14 @@
 import React, { Component } from 'react'
+import styled from 'styled-components'
+
+const StyledApp = styled.div`
+color: ${(props)=> props.theme.fontColor}
+`;  
 
 export default class About extends Component {
   render() {
     return (
+      <StyledApp>   
       <div>
         <section className="colorlib-about" data-section="about">
         <div className="colorlib-narrow-content">
@@ -103,6 +109,7 @@ export default class About extends Component {
         </div>
         </section>
       </div>
+    </StyledApp>  
     )
   }
 }

@@ -1,15 +1,15 @@
 import React, { Component } from 'react'
 
-export default class Sidebar extends Component {
+export default class Sidebar extends Component{
   render() {
     return (
       <div>
         <div>
           <nav href="#navbar" className="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i /></nav>
-          <aside id="colorlib-aside" className="border js-fullheight">
-            <div className="text-center">
+          <aside id="colorlib-aside" className="border js-fullheight">  
+           <div className="text-center">
               <div className="author-img" style={{backgroundImage: 'url(images/about.jpg)'}} />
-              <h1 id="colorlib-logo"><a href="index.html">Rahul Maurya</a></h1>
+              <h1 id="colorlib-logo"><a href="index.html">{this.props.firstName} {this.props.lastName}</a></h1>
               <span className="email"><i className="icon-mail"></i> mauryarahul852@gmail.com</span>
             </div>
             <nav id="colorlib-main-menu" role="navigation" className="navbar">
@@ -45,6 +45,7 @@ export default class Sidebar extends Component {
           </aside>
         </div>
       </div>
+      
     )
   }
 }
